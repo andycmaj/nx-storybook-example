@@ -15,6 +15,8 @@ export const Test: StoryObj<typeof Components> = {
 
     const button = canvas.getByRole('button');
     userEvent.click(button);
-    console.log('I CLICKED ME');
+
+    const checkbox = canvas.getByText('Toyota');
+    expect(checkbox.getAttribute('aria-colindex')).toBe('1');
   },
 };
