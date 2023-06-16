@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "run-migrations": {
+      "implementation": "./src/executors/run-migrations/executor",
+      "schema": "./src/executors/run-migrations/schema.json",
+      "description": "run-migrations executor"
+    }
+  }
+}

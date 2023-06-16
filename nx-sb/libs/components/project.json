@@ -58,6 +58,9 @@
           "test-storybook --url http://localhost:4400 --config-dir ./libs/components/.storybook"
         ]
       }
+    },
+    "test-path": {
+      "executor": "@nx-sb/typeorm-migrations:run-migrations"
     }
   }
 }

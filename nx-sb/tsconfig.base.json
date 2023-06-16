@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-sb/components": ["libs/components/src/index.ts"]
+      "@nx-sb/components": ["libs/components/src/index.ts"],
+      "@nx-sb/migrations-executor": ["libs/migrations-executor/src/index.ts"],
+      "@nx-sb/typeorm-migrations": ["libs/typeorm-migrations/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
