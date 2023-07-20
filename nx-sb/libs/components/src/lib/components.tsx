@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { container } from './components.css';
-import { AgGridReact } from 'ag-grid-react';
-import { ColDef } from 'ag-grid-community';
+import { AgGridReact } from '@ag-grid-community/react';
+import { ColDef } from '@ag-grid-community/core';
 
 /* eslint-disable-next-line */
 export interface ComponentsProps {}
