@@ -1,4 +1,8 @@
 /* eslint-disable */
+
+const esmModules = ['@ag-grid-community'];
+
+
 export default {
   displayName: 'components',
   preset: '../../jest.preset.js',
@@ -18,7 +22,9 @@ export default {
       },
     ],
   },
-  transformIgnorePatterns: ['node_modules/(?!\@ag-grid-community/)'],
+  transformIgnorePatterns: [
+    `node_modules/(?!(?:.pnpm/)?(${esmModules.join('|')}))`,
+  ],
 
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'mjs'],
   coverageDirectory: '../../coverage/libs/components',

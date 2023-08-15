@@ -16,11 +16,19 @@
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production"
+      ]
     },
     "e2e": {
-      "inputs": ["default", "^production"]
+      "inputs": [
+        "default",
+        "^production"
+      ]
     },
     "lint": {
       "inputs": [
@@ -30,14 +38,25 @@
       ]
     },
     "test": {
-      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+      "inputs": [
+        "default",
+        "^production",
+        "{workspaceRoot}/jest.preset.js"
+      ]
     },
     "build-storybook": {
-      "inputs": ["default", "^production", "!{projectRoot}/.storybook/**/*"]
+      "inputs": [
+        "default",
+        "^production",
+        "!{projectRoot}/.storybook/**/*"
+      ]
     }
   },
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -47,7 +66,9 @@
       "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
       "!{projectRoot}/.storybook/**/*"
     ],
-    "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
+    "sharedGlobals": [
+      "{workspaceRoot}/babel.config.json"
+    ]
   },
   "generators": {
     "@nx/react": {
